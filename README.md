@@ -10,12 +10,16 @@ SKILL.md under 500 lines, references one level deep, third-person
 descriptions with triggers, and 3 evals per skill that change before the
 skill's content does.
 
+These skills encode personal judgment — opinionated guidance over rule
+lists, per the Claude 5-era shift the standard is built on.
+
 ## Skills
 
 | Skill | What it does |
 |---|---|
 | [`reviewing-plans/`](skills/reviewing-plans/) | Adversarial review of plans, specs, and proposals before execution |
 | [`tracing-root-causes/`](skills/tracing-root-causes/) | Disciplined causal analysis: competing hypotheses, evidence ranked by strength, active disconfirmation |
+| [`designing-consistently/`](skills/designing-consistently/) | Keeps UI work consistent with an app's DESIGN.md: read before building, consume tokens, record decisions as a gated step |
 
 ## Used alongside (not in this repo)
 
