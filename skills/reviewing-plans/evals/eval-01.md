@@ -14,10 +14,11 @@ without specifying whether active sessions survive.
 ## Expected behavior
 
 - [ ] Makes pre-commitment predictions (3-5 likely problem areas) BEFORE
-      detailed reading.
+      detailed reading, and lists them in the review output.
 - [ ] Verifies every file/function reference against the actual codebase —
-      catches the rename via git evidence, reports it as CRITICAL with the
-      commit reference and a concrete fix.
+      catches the rename via git evidence and reports it as a scored finding
+      (CRITICAL or MAJOR, calibrated against the plan's other findings) with
+      the commit reference and a concrete fix.
 - [ ] Extracts assumptions and rates them VERIFIED / REASONABLE / FRAGILE;
       the queue assumption lands FRAGILE with a validation method.
 - [ ] Flags the sessions step as ambiguous: states both interpretations and

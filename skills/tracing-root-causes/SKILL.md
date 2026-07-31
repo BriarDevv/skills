@@ -6,7 +6,7 @@ description: Disciplined causal analysis for explaining observed outcomes — co
 # Tracing root causes
 
 <!-- Methodology distilled from OMC's tracer agent (MIT), 2026-07-30.
-     See docs/adrs/ADR-002-omc-salvage.md for provenance. -->
+     Provenance: Context-Engineering repo, docs/adrs/ADR-002-omc-salvage.md. -->
 
 Explain outcomes through evidence, not narrative. The failure mode this
 prevents: jumping from symptom to favorite explanation, then collecting only

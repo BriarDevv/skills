@@ -6,7 +6,7 @@ description: Adversarial review of plans, specs, and proposals before execution 
 # Reviewing plans
 
 <!-- Methodology distilled from OMC's critic + analyst agents (MIT), 2026-07-30.
-     See docs/adrs/ADR-002-omc-salvage.md for provenance. -->
+     Provenance: Context-Engineering repo, docs/adrs/ADR-002-omc-salvage.md. -->
 
 A false approval costs 10-100x a false rejection — but manufactured outrage
 destroys the reviewer's signal. Both discipline and calibration.
@@ -51,8 +51,10 @@ destroys the reviewer's signal. Both discipline and calibration.
 
 ## Verdict
 
-**REJECT / REVISE / ACCEPT-WITH-RESERVATIONS / ACCEPT**, with: findings by
-severity (CRITICAL blocks execution, MAJOR causes rework, MINOR suboptimal),
+**REJECT / REVISE / ACCEPT-WITH-RESERVATIONS / ACCEPT**, with: the
+pre-committed problem areas from step 1 (the deliberate-search trail must be
+visible); findings by severity
+(CRITICAL blocks execution, MAJOR causes rework, MINOR suboptimal),
 each with evidence (file:line or backtick-quoted excerpt) + concrete fix;
 What's Missing; Ambiguity Risks; Open Questions (unscored). If the work is
 genuinely solid, say ACCEPT plainly — a clean bill from a hard reviewer
