@@ -36,7 +36,12 @@ make the report objective instead of vibes.
 
 **3. Drift report.** Near-duplicates, outliers, competing patterns; each
 family with its variant count, evidence, and the surfaces it touches. Order
-by spread (surfaces affected), not by discovery order.
+by spread (surfaces affected), not by discovery order. Theme modes are not
+drift: a selector-scoped reassignment of the same variable
+(`[data-theme="dark"] { --paper: … }`) is an intentional mode — it goes to
+frontmatter `modes:` (values + selector, per the convention). Drift is the
+unscoped, scattered variation. A mode whose values duplicate another's is
+the same mode with a widened selector, not a new value set.
 
 **4. Propose tokens.** Semantic role + frequency decide: the dominant or
 correct variant becomes the token; the other variants become migration
