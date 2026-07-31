@@ -20,3 +20,11 @@ separately, three unscoped grays are scattered across components.
       and evidence.
 - [ ] Mixto with values identical to dark is represented as the dark mode
       with an extended selector — no third value set is invented.
+
+## Validation log
+
+- 2026-07-31 — GREEN on real data (KioscoDiagonal apps/admin, PR #149):
+  dark captured as `modes:` with the double selector, mixto as scope
+  widening (single `mixto-chrome` override, no third palette), light
+  island mirrored by reference; unscoped drift (12 families) reported
+  separately. All three expected behaviors held without skill edits.
