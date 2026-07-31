@@ -17,6 +17,17 @@ skill's content does.
 | [`reviewing-plans/`](skills/reviewing-plans/) | Adversarial review of plans, specs, and proposals before execution |
 | [`tracing-root-causes/`](skills/tracing-root-causes/) | Disciplined causal analysis: competing hypotheses, evidence ranked by strength, active disconfirmation |
 
+## Used alongside (not in this repo)
+
+Day to day this library is complemented by two plugin skill sets, installed
+from the official marketplace by the `workstation` installer:
+
+- [`frontend-design`](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/frontend-design)
+  (Anthropic) — UI/UX implementation guidance.
+- [`superpowers`](https://github.com/obra/superpowers) by Jesse Vincent — TDD,
+  debugging, and collaboration workflows (vendored in the
+  [official marketplace](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/superpowers)).
+
 ## Provenance
 
 Both initial skills were salvaged from oh-my-claudecode's agent pack (see
