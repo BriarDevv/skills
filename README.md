@@ -22,6 +22,19 @@ lists, per the Claude 5-era shift the standard is built on.
 | [`designing-consistently/`](skills/designing-consistently/) | Keeps UI work consistent with an app's DESIGN.md: read before building, consume tokens, record decisions as a gated step |
 | [`extracting-design-md/`](skills/extracting-design-md/) | Reverse-engineers a DESIGN.md from an existing project: evidenced drift report, collapsed tokens, backfilled decisions, migration plan with a convergence metric |
 
+## Authoring method
+
+Every skill here is authored and verified with two complementary lenses:
+
+- [`writing-skills`](https://github.com/obra/superpowers) — from the
+  superpowers set by Jesse Vincent: TDD applied to documentation. No skill
+  (or edit to one) without a failing test first; baseline subagent runs are
+  observed before any content is written.
+- [`skill-creator`](https://github.com/anthropics/skills/tree/main/skills/skill-creator)
+  — by Anthropic: paired baseline/with-skill runs, objectively graded
+  assertions, and aggregated benchmarks (e.g. `extracting-design-md`
+  shipped at 8/8 assertions vs a 4/8 baseline, delta +0.50).
+
 ## Used alongside (not in this repo)
 
 Day to day this library is complemented by two plugin skill sets, installed
